@@ -1,0 +1,21 @@
+nav {
+    display: flex;
+    align-items: left;
+    padding: 0 2rem;
+    height: 60px;
+    border-bottom: 1px solid #aaa;
+    gap: 3rem;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+}

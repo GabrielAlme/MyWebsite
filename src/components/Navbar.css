@@ -1,8 +1,8 @@
 nav {
     display: flex;
     align-items: left;
-    padding: 0 2rem;
-    height: 60px;
+    padding: 1rem 2rem;
+    height: 30px;
     border-bottom: 1px solid #aaa;
     gap: 3rem;
 }

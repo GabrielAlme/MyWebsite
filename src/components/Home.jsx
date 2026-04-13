@@ -1,6 +1,21 @@
+import './Home.css'
+import photo from '../assets/me.jpeg'
+
 function Home() {
     return (
-        <h1>Home Page</h1>
+        <div className='hero'>
+            <div className='hero-image'>
+                <img src={photo} alt="Gabriel" />
+            </div>
+            <div className="hero-bio">
+                <h1>Hi, my name is Gabriel</h1>
+                <p>I am a Computer Science student at the University of Wisconsin Stout 
+                    and I have been writing code for 5 years. I will be graduating soon and if you have 
+                    work it would be super cool if you paid me! If you want some assurance you can visit 
+                    my projects page which will have some of my school and personal projects listed. Thanks
+                     for Visiting!</p>
+            </div>
+        </div>
     )
 }
 

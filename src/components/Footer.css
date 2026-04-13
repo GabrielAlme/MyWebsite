@@ -7,3 +7,9 @@
 footer {
     border-top: 1px solid #aaa;
 }
+
+@media (max-width: 760px) {
+    footer{
+        font-size: .6rem;
+    }
+}

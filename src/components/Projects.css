@@ -1,0 +1,16 @@
+.projects {
+    text-align: left;
+}
+
+.projects h1 {
+    padding-left: 2rem;
+}
+
+.projects-list {
+    list-style: none;
+}
+
+.projects-list li {
+    padding-bottom: 1rem;
+}
+

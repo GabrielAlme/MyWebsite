@@ -3,6 +3,7 @@ import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import Home from './components/Home'
 import Projects from "./components/Projects.jsx"
+import LeaveMsg from "./components/LeaveMsg.jsx"
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="/Projects" element={<Projects />} />
+        <Route path="/LeaveMsg" element={<LeaveMsg />} />
       </Routes>
       <Footer />
     </BrowserRouter>

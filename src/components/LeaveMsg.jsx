@@ -1,18 +1,16 @@
+import { useState } from 'react'
 import './LeaveMsg.css'
 import emailjs from '@emailjs/browser'
-import '.Leavemsg.css'
 
-const [form, setForm] = useState({
+function LeaveMsg() {
+
+    const [form, setForm] = useState({
     name: '',
     email: '',
     phone: '',
     message: ''
-})
+    })
 
-
-
-
-function LeaveMsg() {
     return(
         <>
         <div className="form">
@@ -49,3 +47,5 @@ function LeaveMsg() {
         </>
     )
 }
+
+export default LeaveMsg

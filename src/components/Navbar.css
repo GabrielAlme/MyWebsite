@@ -1,6 +1,5 @@
 nav {
     display: flex;
-    align-items: left;
     padding: 1rem 2rem;
     height: 30px;
     border-bottom: 1px solid #aaa;

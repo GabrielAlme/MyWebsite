@@ -43,6 +43,9 @@ function LeaveMsg() {
                     placeholder="Leave your message here (required)"
                 />
             </div>
+            <div classname="submit">
+                <button type="submit">Send Message</button>
+            </div>
         </div>
         </>
     )

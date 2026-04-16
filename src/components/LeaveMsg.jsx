@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import './LeaveMsg.css'
 import emailjs from '@emailjs/browser'
+import ConfirmModal from "./modals/ConfirmModal"
+import BasicModal from "./modals/BasicModal"
 
 function LeaveMsg() {
 
@@ -11,7 +13,14 @@ function LeaveMsg() {
     message: ''
     })
 
+    const [showConfirm, setShowConfirm] = useState(false)
+    const [ShowError, setShowError] = useState(false)
+    const [ShowSuccess, setShowSuccess] = useState(false)
     const [error, setError] = useState('')
+
+    const handleChange = (e) => {
+        setForm({...form, [e.targetname]: e.target.value})
+    }
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -21,14 +30,20 @@ function LeaveMsg() {
             setError('Please enter a valid phone number')
             return
         }
+        setShowConfirm(true)
+    }
 
-        emailjs.send(
-            'service_l6aetea',
-            'template_58g28x4',
+    const handleConfirm = () => {
+            setShowConfirm(false)
+            emailjs.send(
+            import.meta.env.VITE_SERVICE_ID,
+            import.meta.env.VITE_TEMPLATE_ID,
             form,
-            '1-NZrbnEWtOknam5d'
+            import.meta.env.VITE_PUBLIC_KEY
         ) .then(() => {
-            setShowModal(true)
+            setShowSuccess(true)
+        }).catch(() => {
+            setShowError(true)
         })
     }
 

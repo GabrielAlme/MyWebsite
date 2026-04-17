@@ -3,9 +3,14 @@
     padding-left: 2rem;
 }
 
+.projects h1 {
+    font-size: var(--headerSize);
+}
+
 
 .projects-list {
     list-style: none;
+    font-size: var(--textSize);
 }
 
 .projects-list a {

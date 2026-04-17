@@ -5,6 +5,11 @@
     --border: #cccccc;
     --input-bg: #f9f9f9;
     --link: rgb(110, 36, 179);
+    --textSize: 1rem;
+    --headerSize: 2rem;
+
+    --navText: 1.3rem;
+    --navSize: 70px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,6 +20,17 @@
     --border: #444444;
     --input-bg: #2a2a2a;
     --link: rgb(61, 194, 255);
+    }
+}
+
+@media (max-width: 760px) {
+    :root{
+        --textSize: .8rem;
+        --headerSize: 1.6rem;
+
+        --navText: 1rem;
+        --navSize: 60px;
+
     }
 }
 

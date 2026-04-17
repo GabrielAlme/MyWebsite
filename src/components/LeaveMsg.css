@@ -1,13 +1,25 @@
 .form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     padding-left: 2rem;
+    padding-right: 4rem;
     padding-top: 1%;
     padding-bottom: 3rem;
-}
-.form div{
-    padding-top: 1rem;
-    
+    max-width: 100%;
 }
 
+.form div{
+    padding-top: 1rem;
+}
+
+.form input, textarea {
+    resize: none;
+    box-sizing: border-box;
+}
+
+.form input {
+    width: 60%
+}
+
+.form textarea {
+    height: 20rem;
+    width: 100%;
+}

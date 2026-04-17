@@ -9,7 +9,6 @@
     --headerSize: 2rem;
 
     --navText: 1.3rem;
-    --navSize: 70px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -29,8 +28,6 @@
         --headerSize: 1.6rem;
 
         --navText: 1rem;
-        --navSize: 60px;
-
     }
 }
 

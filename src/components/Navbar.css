@@ -1,7 +1,6 @@
 nav {
     display: flex;
-    padding: 0;
-    height: var(--navSize);
+    padding-bottom: 1rem;
     border-bottom: 1px solid var(--border);
     font-size: var(--navText);
 }

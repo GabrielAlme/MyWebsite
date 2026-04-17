@@ -1,3 +1,5 @@
+import './Modal.css';
+
 function BasicModal ({title, message, onClose}) {
     return (
         <div className="modal-container">

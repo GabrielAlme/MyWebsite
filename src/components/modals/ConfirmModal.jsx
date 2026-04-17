@@ -1,13 +1,15 @@
-import emailjs from '@emailjs/browser'
+import './Modal.css'
 
 function ConfirmModal({ title, message, confirmMessage, onConfirm, onClose }) {
     return (
         <div className="modal-container">
-            <div classnName="confirm">
+            <div className="confirm">
                 <h2>{title}</h2>
                 <p>{message}</p>
-                <button onClick={onConfirm}>{confirmMessage}</button>
-                <button onClick={onClose}>Cancel</button>
+                <div className="buttons">
+                    <button onClick={onConfirm}>{confirmMessage}</button>
+                    <button onClick={onClose}>Cancel</button>
+                </div>
             </div>
         </div>
     )

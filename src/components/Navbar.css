@@ -1,22 +1,21 @@
 nav {
     display: flex;
-    padding: 1rem 2rem;
-    height: 30px;
-    border-bottom: 1px solid #aaa;
-    gap: 3rem;
+    padding: 0;
+    height: 60px;
+    border-bottom: 1px solid var(--border);
 }
 
 .nav-links {
     display: flex;
     list-style: none;
     gap: 2rem;
-    margin: 0;
-    padding: 0;
+    padding-top: 1rem;
+    padding-left: 2rem;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: #333;
+    color: var(--text);
 }
 
 
@@ -25,3 +24,4 @@ nav {
         font-size: .8rem;
     }
 }
+

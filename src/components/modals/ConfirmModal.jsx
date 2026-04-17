@@ -1,6 +1,6 @@
 import emailjs from '@emailjs/browser'
 
-function ConfirmModal({ title, message,confirmMessage, onConfirm, onClose }) {
+function ConfirmModal({ title, message, confirmMessage, onConfirm, onClose }) {
     return (
         <div className="modal-container">
             <div classnName="confirm">

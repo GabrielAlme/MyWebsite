@@ -14,12 +14,12 @@ function LeaveMsg() {
     })
 
     const [showConfirm, setShowConfirm] = useState(false)
-    const [ShowError, setShowError] = useState(false)
-    const [ShowSuccess, setShowSuccess] = useState(false)
+    const [showError, setShowError] = useState(false)
+    const [showSuccess, setShowSuccess] = useState(false)
     const [error, setError] = useState('')
 
     const handleChange = (e) => {
-        setForm({...form, [e.targetname]: e.target.value})
+        setForm({...form, [e.target.name]: e.target.value})
     }
 
     const handleSubmit = (e) => {
@@ -42,6 +42,7 @@ function LeaveMsg() {
             import.meta.env.VITE_PUBLIC_KEY
         ) .then(() => {
             setShowSuccess(true)
+            setForm({ name: '', email: '', phone: '', message: ''})
         }).catch(() => {
             setShowError(true)
         })
@@ -63,12 +64,15 @@ function LeaveMsg() {
     return(
         <>
         <div className="form">
+            <form onSubmit={handleSubmit}>
             <div className="name">
                 <input
                     required
                     type="text"
                     name="name"
                     placeholder="Your name (required)"
+                    value={form.name}
+                    onChange={handleChange}
                 />
             </div>
             <div className="email">
@@ -76,6 +80,8 @@ function LeaveMsg() {
                     type="email"
                     name="email"
                     placeholder="Your email"
+                    value={form.email}
+                    onChange={handleChange}
                 />
             </div>
             <div className="phone">
@@ -86,18 +92,47 @@ function LeaveMsg() {
                     value={form.phone}
                     onChange={handlePhone}
                 />
+                {error && <p className="error">{error}</p>}
             </div>
-            <div className="Message">
-                <input
+            <div className="message">
+                <textarea
                     type="text"
-                    name="email"
+                    name="message"
                     placeholder="Leave your message here (required)"
+                    value={form.message}
+                    onChange={handleChange}
+                    required
                 />
             </div>
             <div classname="submit">
                 <button type="submit">Send Message</button>
             </div>
+            </form>
         </div>
+        { showConfirm && (
+            <ConfirmModal
+            title=""
+            message="Are you sure you want to send this message?"
+            confirmMessage="Send"
+            onConfirm={handleConfirm}
+            onClose={() => setShowConfirm(false)}
+            />
+        )}
+        { showSuccess && (
+            <BasicModal
+            title="Success"
+            message="Your message was successfully sent!"
+            onClose={() => setShowSuccess(false)}
+            />
+        )}
+        {showError && (
+            <BasicModal
+            title="Something went wrong"
+            message="Your message failed to send, please try again"
+            onClose={() => setShowError(false)}
+            />
+        )}
+
         </>
     )
 }

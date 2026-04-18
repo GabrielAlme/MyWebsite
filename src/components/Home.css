@@ -1,3 +1,21 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.github-container {
+    padding-left: 2rem;
+}
+
+.github-container h1 {
+    font-size: 1.5rem;
+}
+
+.github-calendar {
+    overflow-x: auto;
+    width: 100%;
+}
+
 .hero {
     display: flex;
     flex-direction: row;

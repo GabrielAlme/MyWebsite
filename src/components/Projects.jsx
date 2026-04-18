@@ -29,7 +29,7 @@ function Projects() {
                     </li>
 
                     <li><p>
-                    <a href="https://github.com/GabrielAlme/Shadow-Array-Benchmark" target="_blank">
+                    <a href="https://github.com/GabrielAlme/MyWebsite" target="_blank">
                         My Website</a>
                         &nbsp;- This is all of the source code for the site you are on right now!
                         </p>

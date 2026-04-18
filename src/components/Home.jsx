@@ -24,6 +24,13 @@ function Home() {
                     <GitHubCalendar username="GabrielAlme" />
                 </div>
             </div>
+            <div className="whatever-i-want">
+                <h1>This is the section where I can put whatever I want and talk about whatever I want. Awesome right? I know.</h1>
+                <p>
+                    Right now I am working on a financial manager that will be powered by React, Node.js, and Plaid API. If you
+                    want a look at this project it will be listed on my projects page or on my github under my repositories.
+                </p>
+            </div>
         </div>
     )
 }

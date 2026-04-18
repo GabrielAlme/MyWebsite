@@ -1,14 +1,20 @@
 .main-container {
     display: flex;
     flex-direction: column;
-}
-
-.github-container {
     padding-left: 2rem;
 }
 
 .github-container h1 {
     font-size: 1.5rem;
+}
+
+.whatever-i-want h1 {
+    font-size: 1.5rem;
+}
+
+.whatever-i-want {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .github-calendar {

@@ -16,3 +16,6 @@ footer {
     font-size: var(--textSize);
 }
 
+footer Link {
+    color: var(--link);
+}

@@ -28,6 +28,13 @@ function Projects() {
                         array. But it does!</p>
                     </li>
 
+                    <li><p>
+                    <a href="https://github.com/GabrielAlme/Shadow-Array-Benchmark" target="_blank">
+                        My Website</a>
+                        &nbsp;- This is all of the source code for the site you are on right now!
+                        </p>
+                    </li>
+
                 </ul>
             </div>
         </div>

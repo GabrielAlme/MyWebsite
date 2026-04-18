@@ -19,7 +19,7 @@ function Home() {
                 </div>
             </div>
             <div className="github-container">
-                <h1>This is my github contributions calendar:</h1>
+                <h1>This is my github contributions calendar: (there should be more but my website repo is private)</h1>
                 <div className="github-calendar">
                     <GitHubCalendar username="GabrielAlme" />
                 </div>

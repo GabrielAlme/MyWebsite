@@ -1,6 +1,7 @@
 import './Home.css'
 import photo from '../assets/me.jpeg'
 import { GitHubCalendar } from 'react-github-calendar'
+import { Link } from 'react-router-dom'
 
 function Home() {
     return (
@@ -27,8 +28,8 @@ function Home() {
             <div className="whatever-i-want">
                 <h1>This is the section where I can put whatever I want and talk about whatever I want. Awesome right? I know.</h1>
                 <p>
-                    Right now I am working on a financial manager that will be powered by React, Node.js, and Plaid API. If you
-                    want a look at this project it will be listed on my projects page or on my github under my repositories.
+                    Hey its been a while if anyone actually reads this but I'm back working on my financial manager and if all goes to plan it should be done within next month! 
+                    You can find the github page <a href="https://github.com/GabrielAlme/SomeFinancialManagementApp" target="_blank">here</a> if you're interested.
                 </p>
             </div>
         </div>

@@ -6,6 +6,12 @@ function Projects() {
             <h1>These are my Projects:</h1>
             <div >
                 <ul className="projects-list">
+                    <li><p className="highlight">
+                        <a href="https://github.com/GabrielAlme/SomeFinancialManagementApp" target="_blank">
+                        Some Financial Management App</a>
+                        &nbsp;- This is the finanacial manager that I am currently working on, it is easily my biggest solo project so far please take a look!</p>
+                    </li>
+                    
                     <li><p>
                         <a href="https://github.com/GabrielAlme/SudokuSolver" target="_blank">
                         Sudoku Solver</a>
@@ -34,7 +40,6 @@ function Projects() {
                         &nbsp;- This is all of the source code for the site you are on right now!
                         </p>
                     </li>
-
                 </ul>
             </div>
         </div>

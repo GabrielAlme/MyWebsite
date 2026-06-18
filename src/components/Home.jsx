@@ -31,6 +31,9 @@ function Home() {
                     Hey its been a while if anyone actually reads this but I'm back working on my financial manager and if all goes to plan it should be done within next month! 
                     You can find the github page <a href="https://github.com/GabrielAlme/SomeFinancialManagementApp" target="_blank">here</a> if you're interested.
                 </p>
+                <p>
+                    If you haven't played Dark Souls 1 remastered I highly recommend the vibe is off the charts 
+                </p>
             </div>
         </div>
     )

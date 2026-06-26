@@ -22,7 +22,7 @@ function Home() {
             <div className="github-container">
                 <h1>This is my github contributions calendar: </h1>
                 <div className="github-calendar">
-                    <GitHubCalendar username="GabrielAlme" year={new Date().getFullYear()}/>
+                    <GitHubCalendar username="GabrielAlme" throwOnError year={new Date().getFullYear()}/>
                 </div>
             </div>
             <div className="whatever-i-want">

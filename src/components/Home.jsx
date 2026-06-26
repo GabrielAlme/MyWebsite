@@ -28,11 +28,11 @@ function Home() {
             <div className="whatever-i-want">
                 <h1>This is the section where I can put whatever I want and talk about whatever I want. Awesome right? I know.</h1>
                 <p>
-                    Hey its been a while if anyone actually reads this but I'm back working on my financial manager and if all goes to plan it should be done within next month! 
+                    Yo still working on the financial manager this not getting done this month but I am putting in work daily.
                     You can find the github page <a href="https://github.com/GabrielAlme/SomeFinancialManagementApp" target="_blank">here</a> if you're interested.
                 </p>
                 <p>
-                    If you haven't played Dark Souls 1 remastered I highly recommend the vibe is off the charts 
+                    If you haven't played Dark Souls 1 remastered I highly recommend the vibe is off the charts, just went into some tree and there was two invisible walls this game peak
                 </p>
             </div>
         </div>
